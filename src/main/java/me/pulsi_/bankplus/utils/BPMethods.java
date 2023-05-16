@@ -213,7 +213,7 @@ public class BPMethods {
             if (multi) Bukkit.getOnlinePlayers().forEach(p -> new MultiEconomyManager(p).saveBankBalance(true));
             else Bukkit.getOnlinePlayers().forEach(p-> new SingleEconomyManager(p).saveBankBalance(true));
             if (saveBroadcast) BPLogger.info("All player balances have been saved!");
-        }, delay * 1200L, delay * 1200L));
+        }, delay * 20L, delay * 20L));
     }
 
     public static String formatLong(BigDecimal balance) {
